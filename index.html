@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8"> <!-- تحديد ترميز الصفحة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- لجعل الصفحة متجاوبة مع الأجهزة المختلفة -->
+    <title>الحضارة اليونانية</title> <!-- عنوان الصفحة في المتصفح -->
+
+    <!-- استدعاء خط "Cairo","Rakkas" من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
+
+    <style>
+        /* عند تمرير الماوس على الصور سيتم تكبيرها قليلاً */
+        img:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+       
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif; /* استخدام خط "Cairo" */
+            background-color: #f4f1ea; /* لون خلفية الصفحة */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* توسيط المحتوى */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف للنص */
+            color: #333; /* لون النص العام */
+        }
+        
+        /* تنسيق شريط التنقل الرئيسي */
+nav {
+    display: flex; /* استخدام Flexbox لترتيب العناصر بشكل أفقي */
+    width: 88%; /* عرض 88% لواجهة الصفحة */
+    justify-content: space-between; /* توزيع المسافة بين الشعار وعناصر التنقل */
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    margin: 0 auto; /* توسيط عنصر التنقل أفقيًا */
+    padding: 0 5rem; /* هوامش داخلية أفقية */
+    background-color: #fff; /* لون خلفية أبيض */
+    height:125px;/* ارتفاع الواجهة*/
+}
+
+/* تنسيق حاوية الشعار داخل عنصر التنقل */
+nav .logo {
+    display: flex; /* استخدام Flex لترتيب محتويات الشعار */
+    font-size: 2rem; /* حجم خط كبير لجعل الشعار بارزًا */
+    align-items: center; /* محاذاة النص عموديًا */
+}
+           
+/* تنسيق نص الشعار */
+nav .logo h1 {
+    font-family: 'Rakkas'; /* خط مخصص لتمييز الشعار */
+}
+
+/* تنسيق حاوية عناصر التنقل */
+nav .nav-items {
+    display: flex; /* عرض العناصر بشكل أفقي */
+    list-style-type: none; /* إزالة النقط من قائمة العناصر */
+    
+}
+
+/* تنسيق كل عنصر فردي داخل قائمة التنقل */
+nav .nav-items .nav-item {
+    padding: 8px 8px; /* مسافة أفقية بين كل عنصر وآخر */
+}
+
+/* تنسيق الروابط داخل عناصر التنقل */
+nav .nav-link {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    color: #86775f; /* لون أساسي للرابط */
+    font-size: 16px; /* حجم خط قياسي */
+}
+nav .nav-link2 {
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+     color: #fff; /* لون أساسي للرابط */
+    font-size: 16px; /* حجم خط قياسي */
+}
+
+/* تأثير التمرير (hover) على روابط التنقل */
+nav .nav-link:hover {
+    color: #4f4638; /* تغيير اللون عند التمرير لزيادة التفاعل */
+}
+        
+ button{
+                background-color: #685c4a;
+                height:40px;
+                width:150px;
+                color:#fff;
+                border-radius:10px;
+                border:none;
+                box-shadow:none;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+            button:hover{
+               opacity:0.8;
+            }
+
+            
+        
+
+        .title1 {
+            color: #86775f; /* لون خاص للعناوين */
+        }
+
+        .photo {
+            width: 100%; /* عرض كامل للصورة داخل الحاوية */
+            max-width: 400px; /* أقصى عرض للصورة */
+            border-radius: 10px; /* زوايا مستديرة للصورة */
+            margin-top: 20px;
+        }
+
+        .div1 {
+            max-width: 700px; /* أقصى عرض للمربع */
+            margin: auto; /* توسيطه في الصفحة */
+            background-color: #fff; /* خلفية بيضاء للصندوق */
+            padding: 30px;
+            border-bottom: 15px solid transparent; /* حافة سفلية شفافة (ربما للتزيين) */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* ظل للصندوق */
+            text-align: center; /* توسيط النص داخل الصندوق */
+        }
+
+        .divcap {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #86775f; /* لون تسمية الصورة */
+        }
+
+        p {
+            font-family: 'Cairo', sans-serif; /* تطبيق الخط على الفقرات */
+        }
+
+        .divborder {
+            border-style: solid; /* نوع الحد */
+            border-width: 1px; /* سماكة الحد */
+            border-radius: 20px; /* زوايا مستديرة */
+            border-color: #86775f; /* لون الحد */
+            margin-top: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .bold {
+            font-weight: bold; /* نص غامق */
+        }
+
+        span {
+            text-decoration: underline; /* تسطير النص */
+        }
+        span:hover{
+            color: #202053;/* تغيير لون النص عند تمرير المؤشر إلى اللون الأزرق الداكن */
+            cursor:pointer;/* تغيير شكل المؤشر إلى يد للإشارة إلى أن العنصر قابل للنقر */
+        }
+          
+                
+  
+            
+            
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>متحف الحضارات</h1>
+        </div>
+        <ul class="nav-items">
+        <li class="nav-item">
+            <a href="https://98seif.github.io/-/" class="nav-link">الصفحة الرئيسية</a>
+        </li>
+            <li class="nav-item">
+            <a href="https://fatima-labana.github.io/fatima1/contact-us.html" class="nav-link">تواصل معنا</a>
+        </li>
+            <li class="nav-item">
+            <a href="https://fatima-labana.github.io/fatima1/log.html" class="nav-link">تسجيل الدخول</a>
+        </li>
+            <li class="nav-item"><button>
+            <a href="https://moadeluss.github.io/tiikket/" class="nav-link2">اشتر التذاكر الآن</a>
+            </button></li>
+            
+            </ul>
+    </nav>
+
+    
+    <div class="div1">
+
+   <h2 class="title1" >قسم الحضارة اليونانية بمتحف الحضارات </h2>
+
+     
+  
+  <div><p>
+    كانت رحلة اليونان القديمة إلى 
+    <a href="https://seif-9.github.io/-project-my/"> <span>
+   متحف الحضارات
+     </span></a>
+     رحلة مليئة بالشغف والدقة. العمل مع علماء الآثار المشهورين  
+    والمؤسسات الثقافية،قمنا بجمع الآثار الأصيلة التي تجسد جوهر الحضارة اليونانية — من التماثيل الرخامية 
+    ومن الفخار إلى التحف الفلسفية والديمقراطية والأساطير.</p> </div>
+    <div>
+    <p> تحكي كل قطعة قصة مجتمع شكل الفن والعلم والفكر للأجيال القادمة، مما سمح للزوار   
+    لتجربة التألق الدائم لليونان بشكل مباشر.
+
+   </p>
+   <p class="bold">نعرض لكم من متحفنا:</p>
+    </div>
+<div class="divborder">
+   <h4>
+    <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLDphm71EiE5wDJZfZ2QPEc1QeagGdGvFjV0iaT-POKzyZglXFR7I2DOxUI29n_QVLycI&usqp=CAU">
+   <div class="divcap"> <p>رأس امرأة</p></div>
+
+   </h4>
+   <h5>
+    <p>
+        تجسد هذه القطعة التبجيل الروماني للتقاليد الفنية اليونانية.</p> 
+        <p>
+        غالبًا ما قام الفنانون الرومان بنسخ أو تكييف النسخ اليونانية الأصلية، وخاصة خلال الفترة الإمبراطورية، 
+        لتزيين الفيلات والأماكن العامة والمقابر.
+        يعكس التعبير الهادئ والشكل المثالي 
+        التركيز الثقافي على الجمال والفضيلة والألوهية
+    </p>
+   </h5></div>
+  <div class="divborder"> <h4>
+    <img class="photo" src="data:image/jpeg;base64,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">
+   <div class="divcap"><p>جونو لودوفيسي</p></div>
+    
+   </h4>
+   <h5>
+    <p>
+        يصور التمثال هيرا/جونو وهي تحمل ابنها الرضيع آريس/مارس (إله الحرب). يؤكد هذا المشهد دورها كأم وحامية إلهية.
+يسلط العناق الرقيق الضوء على الرابطة العاطفية بين الإلهة وطفلها، وهو تصوير نادر لمودة الأم في الفن الكلاسيكي 
+    </p>
+   </h5></div>
+  <div class="divborder"> <h4>
+    <img class="photo" src="https://media.coinarchives.com/5b23ec4b3edac1aa024ceeb5857c5974/img/cng/129/image00162.jpg">
+   <div class="divcap"> <p>رباعي الدراخما الفضي في أثينا</p></div>
+   </h4>
+   <h5>
+    <p>
+        ترمز أثينا إلى الحكمة والحرب والفخر المدني في المجتمع الأثيني 
+        كانت هذه العملة جزءًا من المعيار النقدي الأثيني، المستخدم على نطاق واسع في جميع أنحاء البحر الأبيض المتوسط بسبب
+        أثينا’ القوة البحرية والنفوذ التجاري. لقد أصبح أحد تصميمات العملات الأكثر شهرة 
+        في العصور القديمة، ساعد في تمويل بناء البارثينون والمشاريع المدنية الأخرى.
+    </p>
+   </h5>
+     </div>
+   <div class="divborder"><h4>
+    <img class="photo" src="https://i.etsystatic.com/13933039/r/il/3e92fc/2837171785/il_fullxfull.2837171785_alig.jpg">
+    <div class="divcap"><p>مزهرية السيرين</p></div>
+   </h4>
+   <h5>
+   <p>تتميز مزهرية السيرين بقصصها التفصيلية وشخصياتها المعبرة.
+         تم تصوير حوريات البحر على أنها هجينة بين الطيور والنساء، وهو ما يتسق مع الطريقة التي تم تصورها بها في الفن اليوناني.
+        إنه مثال رئيسي على كيف كانت الأساطير محورية في الثقافة البصرية اليونانية وسرد القصص.
+   
+    </p></h5>
+   </div>
+ <div class="divborder">            <h4>
+    
+    
+    <img class="photo" src="https://cdnus.globalso.com/eastsculpture/H59187b3610e64cfb9826ba6d8e3ed7a6v.jpg">
+   <div class="divcap" ><p> أبولو</p>
+   </div>
+    </h4>
+ 
+   <h5>
+    <p>تمثيل للجمال المثالي والعقل والانسجام، وهي القيم الأساسية للثقافة اليونانية القديمة. لقد كانوا يرمزون إلى الضوء والمعرفة والنظام، مما يعكس دور أبولو كإله للشمس والموسيقى والنبوة. من الناحية الفنية، وضعت هذه التماثيل معايير الكمال الكلاسيكي وأثرت على عصر النهضة والفن الحديث. ومن الناحية الدينية والثقافية، كانت بمثابة رموز قوية في المعابد والأماكن العامة والفكر الفلسفي.
+
+    </p>
+   </h5></div>
+</div>
+</body>
+</html>
